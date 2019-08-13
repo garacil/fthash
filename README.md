@@ -12,7 +12,6 @@ It's an implementation of hash table with very important features to run very fa
 
 Defined macros to use:
 
--------------------------------------
 #define HASH_TABLE_INIT(ht, is, out)
 Use first to init table where:
 
@@ -23,7 +22,7 @@ is: Index size in bits. From 1 to 32. Usual use can be 8 to 24 bits.
     
 out: and int variable. when all is okey, exit with 0.
 
--------------------------------------
+
 #define HASH_TABLE_ADD(ht, k, d, f, out)
 Use to add record to table where:
 
@@ -37,7 +36,7 @@ f: Flag type char. To store any information about data. Free to use if you need 
 
 out: Zero when record was add
 
--------------------------------------
+
 #define HASH_TABLE_GET(ht, k, d, f)
 Use to recover data from table where:
 
@@ -49,7 +48,7 @@ d: Pointer to data
 
 f: Flag of data
 
--------------------------------------
+
 #define HASH_TABLE_ERA(ht, k, out)
 Use to remove data from table where:
 
@@ -58,6 +57,7 @@ ht: Ptr to variable HASHTABLE_T
 k: Ptr to char key to search and remove
 
 out: If record was removed 1 else 0
+
 
 
 To test it
