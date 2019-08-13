@@ -65,46 +65,46 @@ To test it
 
 Compile test.c with gcc -O3 test.c -o test and run:
 
-INITIAL DATA
-Table structure size 48 bytes
-Index 24 bits, size in memory 134217720 bytes
-Buckets 0, size in memory 0 bytes
-Total hash collisions 0
-Seting up pointers to random data...
-Inserting 1000000 of records...
-(     0) INSERT Key 6cce35c487a58feab29032c2621f38d9 Value 840187
-(100000) INSERT Key 17c8ef30ac7903f63b6549d3f5f2bc4c Value 148897
-(200000) INSERT Key 789a2f5cfdf69c0dc5806b281a401578 Value 420991
-(300000) INSERT Key 8dcf69c4beb75517d3b563a31438b1c3 Value 302532
-(400000) INSERT Key 95d27693a5a67c67c2ebf4bfe3f8fc08 Value 498211
-(500000) INSERT Key b803239cd6cb179729765783858dc587 Value 702006
-(600000) INSERT Key cd5fbe4b36cc4f8280840396375969b3 Value 169289
-(700000) INSERT Key 1347af69a0209a0e1774fbf57d7d4d56 Value 499362
-(800000) INSERT Key 7e52c4fcbaf988c6105f05ceacb43b9a Value 337676
-(900000) INSERT Key e08ab2e407380fcf4f6c83605f91085f Value 295103
-INSERTED 1000000 records
-Table structure size 48 bytes
-Index 24 bits, size in memory 134217720 bytes
-Buckets 1000000, size in memory 32000000 bytes
-Total hash collisions 29452
-Total time in seconds 0.677374, by record 0.677373999999 micro seconds
-Get 1000000 random records...
-(     0) READ Key 9adfd489eae898a694ef682623269d62 Value 694
-(100000) READ Key 7acdd169dcf57c626dff503aaad18bdf Value 768984
-(200000) READ Key f355c5b55a8f1e6b139dfad90ae317d0 Value 656831
-(300000) READ Key 186af1f4a78a78fe2dfdd47237976328 Value 635864
-(400000) READ Key 11f04227106fff2105e484e1e65092aa Value 628262
-(500000) READ Key a670f074521e68545ce8d44e2ef77711 Value 652855
-(600000) READ Key d6e7c3b1b29e35f2ff5d399be7575182 Value 21591
-(700000) READ Key d3ac45f58ec9acbc8031822afbfeac67 Value 476885
-(800000) READ Key 17c347ab854251229a323284fdb2bbfd Value 823266
-(900000) READ Key 96005ce3741c45cbcc133144a185ff79 Value 117398
-Get 1000000 of random records time in seconds 1.088843, by record 0.108884300000 micro seconds
-ERASE DATA
-Table structure size 48 bytes
-Index 24 bits, size in memory 134217720 bytes
-Buckets 0, size in memory 0 bytes
-Total hash collisions 0
+INITIAL DATA<br>
+Table structure size 48 bytes<br>
+Index 24 bits, size in memory 134217720 bytes<br>
+Buckets 0, size in memory 0 bytes<br>
+Total hash collisions 0<br>
+Seting up pointers to random data...<br>
+Inserting 1000000 of records...<br>
+(     0) INSERT Key 6cce35c487a58feab29032c2621f38d9 Value 840187<br>
+(100000) INSERT Key 17c8ef30ac7903f63b6549d3f5f2bc4c Value 148897<br>
+(200000) INSERT Key 789a2f5cfdf69c0dc5806b281a401578 Value 420991<br>
+(300000) INSERT Key 8dcf69c4beb75517d3b563a31438b1c3 Value 302532<br>
+(400000) INSERT Key 95d27693a5a67c67c2ebf4bfe3f8fc08 Value 498211<br>
+(500000) INSERT Key b803239cd6cb179729765783858dc587 Value 702006<br>
+(600000) INSERT Key cd5fbe4b36cc4f8280840396375969b3 Value 169289<br>
+(700000) INSERT Key 1347af69a0209a0e1774fbf57d7d4d56 Value 499362<br>
+(800000) INSERT Key 7e52c4fcbaf988c6105f05ceacb43b9a Value 337676<br>
+(900000) INSERT Key e08ab2e407380fcf4f6c83605f91085f Value 295103<br>
+INSERTED 1000000 records<br>
+Table structure size 48 bytes<br>
+Index 24 bits, size in memory 134217720 bytes<br>
+Buckets 1000000, size in memory 32000000 bytes<br>
+Total hash collisions 29452<br>
+Total time in seconds 0.677374, by record 0.677373999999 micro seconds<br>
+Get 1000000 random records...<br>
+(     0) READ Key 9adfd489eae898a694ef682623269d62 Value 694<br>
+(100000) READ Key 7acdd169dcf57c626dff503aaad18bdf Value 768984<br>
+(200000) READ Key f355c5b55a8f1e6b139dfad90ae317d0 Value 656831<br>
+(300000) READ Key 186af1f4a78a78fe2dfdd47237976328 Value 635864<br>
+(400000) READ Key 11f04227106fff2105e484e1e65092aa Value 628262<br>
+(500000) READ Key a670f074521e68545ce8d44e2ef77711 Value 652855<br>
+(600000) READ Key d6e7c3b1b29e35f2ff5d399be7575182 Value 21591<br>
+(700000) READ Key d3ac45f58ec9acbc8031822afbfeac67 Value 476885<br>
+(800000) READ Key 17c347ab854251229a323284fdb2bbfd Value 823266<br>
+(900000) READ Key 96005ce3741c45cbcc133144a185ff79 Value 117398<br>
+Get 1000000 of random records time in seconds 1.088843, by record 0.108884300000 micro seconds<br>
+ERASE DATA<br>
+Table structure size 48 bytes<br>
+Index 24 bits, size in memory 134217720 bytes<br>
+Buckets 0, size in memory 0 bytes<br>
+Total hash collisions 0<br>
 
 Enjoy!
 
