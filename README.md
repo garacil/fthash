@@ -22,7 +22,6 @@ is: Index size in bits. From 1 to 32. Usual use can be 8 to 24 bits.
     It depend of ammount of data to store. Try with diferent sizes before.
     
 out: and int variable. when all is okey, exit with 0.
--------------------------------------
 
 -------------------------------------
 #define HASH_TABLE_ADD(ht, k, d, f, out)
@@ -37,7 +36,6 @@ d: Ptr to data (void*) Can be char, ptr to struct...
 f: Flag type char. To store any information about data. Free to use if you need it.
 
 out: Zero when record was add
--------------------------------------
 
 -------------------------------------
 #define HASH_TABLE_GET(ht, k, d, f)
@@ -50,7 +48,6 @@ k: Ptr to char key to search
 d: Pointer to data
 
 f: Flag of data
--------------------------------------
 
 -------------------------------------
 #define HASH_TABLE_ERA(ht, k, out)
@@ -61,7 +58,6 @@ ht: Ptr to variable HASHTABLE_T
 k: Ptr to char key to search and remove
 
 out: If record was removed 1 else 0
--------------------------------------
 
 
 To test it
