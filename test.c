@@ -116,6 +116,8 @@ int main()
             HASH_TABLE_GET(&table1, (char *)keyptr[index], getvalue, flag);
             end = clock();
 
+            HASH_TABLE_SET_FLAG(&table1, (char*)keyptr[index], 1);
+
             if ((c % 100000) == 0)
                 printf("(%6lu) READ Key %s Value %s\n", c, (char *)keyptr[index], getvalue);
 

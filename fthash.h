@@ -218,6 +218,38 @@ typedef struct
     }                                               \
   } while (0)
 
+/* Macro: set flag */
+
+#define HASH_TABLE_SET_FLAG(ht, k, f)               \
+  do                                                \
+  {                                                 \
+    HASHTABLE_T *_ht = (ht);                        \
+    void *_k = (k);                                 \
+    uint32_t _h;                                    \
+    uint32_t *_hp;                                  \
+    uint32_t _hi;                                   \
+    _LPTR_T *_i;                                    \
+    BUCKET_T *_b;                                   \
+                                                    \
+    _hp = &_h;                                      \
+    _HASH_L4();                                     \
+    _hi = *_hp & _ht->index_mask;                   \
+    _i = _ht->i;                                    \
+    if (!(*_i)[_hi])                                \
+      break;                                        \
+    _b = (*_i)[_hi];                                \
+    while (_b)                                      \
+    {                                               \
+      if (strcmp((char *)_b->key, (char *)_k) == 0) \
+      {                                             \
+        _b->flag = (f);                             \
+        break;                                      \
+      }                                             \
+      else                                          \
+        _b = _b->next;                              \
+    }                                               \
+  } while (0)
+
 /* Macro: remove data */
 
 #define HASH_TABLE_ERA(ht, k, out)                      \
