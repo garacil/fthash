@@ -1,4 +1,4 @@
-Copyright (c) 2019, Germán Luis Aracil Boned
+Germán Luis Aracil Boned
 
 Fast hash table (fthash)
 
