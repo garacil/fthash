@@ -1,5 +1,3 @@
-Germán Luis Aracil Boned
-
 Fast hash table (fthash)
 
 It's an implementation of hash table with very important features to run very fast:
